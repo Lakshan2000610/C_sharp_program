@@ -1,0 +1,32 @@
+using System;
+ class USDandLKR{
+ static void Main(string[] args){
+ int choice;
+ Console.WriteLine("Enter your Choice :\n 1-USD to LKR \n 2-LKR to 
+USD");
+ choice = int.Parse(Console.ReadLine());
+ Double dollar, rupee,val;
+ 
+ switch (choice)
+ {
+ case 1:
+ Console.WriteLine("Enter the Dollar Amount :");
+ dollar = Double.Parse(Console.ReadLine());
+ Console.WriteLine("Enter the Dollar Value :");
+ val = double.Parse(Console.ReadLine());
+ rupee = dollar * val;
+ Console.WriteLine("{0} USD Equals {1} LKR", dollar, rupee);
+ break;
+ case 2:
+ Console.WriteLine("Enter the LKR Amount :");
+ rupee = Double.Parse(Console.ReadLine());
+ Console.WriteLine("Enter the Dollar Value :");
+ val = double.Parse(Console.ReadLine());
+ dollar = rupee / val;
+ Console.WriteLine("{0} LKR Equals {1} USD", rupee, dollar);
+ break;
+ }
+ Console.ReadLine();
+ }
+ }
+}
