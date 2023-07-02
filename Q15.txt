@@ -1,0 +1,18 @@
+using System;
+ public class MonthName{
+ static string getAbbreviatedName(int month) 
+ {
+ DateTime date = new DateTime(2022, month, 1); 
+ return date.ToString("MMM");
+ }
+ static string getFullName(int month) 
+ {
+ DateTime date = new DateTime(2022, month, 1);
+ return date.ToString("MMMM");
+ }
+ static public void Main ()
+ { 
+ int N = 3; 
+ Console.WriteLine("Full Month Name : " + getFullName(N);
+ }
+}
