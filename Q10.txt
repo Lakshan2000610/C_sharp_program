@@ -1,0 +1,11 @@
+using System;
+ public class Math{
+ static public void Main(){
+ double pow_ab = Math.Pow(6, 2);
+ Console.WriteLine(pow_ab);
+ double pow_tt = Math.Pow(3.5, 3);
+ Console.WriteLine(pow_tt);
+ double pow_t = Math.Pow(202, 4);
+ Console.WriteLine(pow_t);
+ }
+}
